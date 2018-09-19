@@ -5,7 +5,8 @@ class Shoe
   BRANDS = []
 
   def initialize(brand)
-
+    @brand = brand
+    self.brand= brand
     # < 1#19234897 Shoe >
   end
 
@@ -16,7 +17,8 @@ class Shoe
 
   def brand=(brand)
     @brand = brand
-
+    if !BRANDS.include?(brand)
+      BRANDS << brand
     end
   end
 
