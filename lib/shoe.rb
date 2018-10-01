@@ -12,17 +12,9 @@ attr_accessor :brand
     def brand=(brand)
         @brand = brand
         if !BRANDS.include?(brand)
-          p BRANDS.each {|brand| brand }
+          # p BRANDS.each {|brand| brand }
           BRANDS << brand
         end
       end
-
-
-  # 4.times do | brand|
-  #    if !BRANDS.include?(brand)
-  #      BRANDS << brand
-  #    end
-  #   end
-  # end
 
 end
