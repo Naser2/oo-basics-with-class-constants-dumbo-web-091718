@@ -1,3 +1,4 @@
+require 'pry'
 class Shoe
   attr_accessor :color, :size, :material, :condition, :brand
   attr_reader :brand
@@ -7,8 +8,9 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if !BRANDS.include?(brand)
+      binding.pry
        #setting Brands here so it's called right away
-       #Or could have set with self. here in the initializer 
+       #Or could have set with self. here in the initializer
       BRANDS << brand
     end
   end

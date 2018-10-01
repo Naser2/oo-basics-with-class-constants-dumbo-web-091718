@@ -12,6 +12,7 @@ attr_accessor :brand
     def brand=(brand)
         @brand = brand
         if !BRANDS.include?(brand)
+          p BRANDS.each {|brand| brand }
           BRANDS << brand
         end
       end

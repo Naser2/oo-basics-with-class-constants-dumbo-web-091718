@@ -3,6 +3,7 @@ tags:
   - attr_accessor
   - attr_reader
   - class constants
+  - pry
 languages:
   - ruby
 resources: 0
